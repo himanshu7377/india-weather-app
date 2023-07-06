@@ -12,7 +12,7 @@ const StateWeather = () => {
       <h2>Weather Information</h2>
       {weatherData ? (
         <div>
-          <p>Temperature: {weatherData.main.temp}°C</p>
+          <p>Temperature: {weatherData.main.temp}°F</p>
           <p>Humidity: {weatherData.main.humidity}%</p>
           <p>Weather Condition: {weatherData.weather[0].description}</p>
         </div>

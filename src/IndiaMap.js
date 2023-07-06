@@ -21,7 +21,7 @@ function IndiaMap() {
             `https://api.openweathermap.org/data/2.5/weather?q=${selectedState}&appid=${apiKey}`
           );
           setWeatherData(response.data);
-          console.log("Weather Data:", response.data);
+          
         } catch (error) {
           console.error("Error fetching weather data:", error);
         }
