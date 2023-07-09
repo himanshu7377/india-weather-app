@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login onLogin={handleLogin} />} />
+        <Route path="/" element={<Login onLogin={handleLogin} />} />
         <Route path="/home" element={loggedIn ? <Home /> : <Navigate to="/login" />} />
         <Route path="/state/:stateName" element={<StateWeather />} /> 
       </Routes>
